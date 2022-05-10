@@ -12,7 +12,11 @@
 */
 
 //CODE HERE
+function helloWorld(){
+  console.log('Hello, World!');
+}
 
+(helloWorld())
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -21,6 +25,13 @@
 */
 
 //CODE HERE
+// function jsNinja(){
+//   return('I am a JavaScript ninja!');
+// }
+
+const jsNinja = () => {
+  return "I am a JavaScript ninja!";
+};
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -31,7 +42,11 @@
 */
 
 //CODE HERE
+function printName(name){
+  console.log(name);
+}
 
+printName("Cameron");
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -45,7 +60,16 @@
 */
 
 //CODE HERE
+function greeting(name){
+  console.log(`Hello, ${name}`);
+}
 
+greeting("Jake")
+
+// let greeting = (name)=>{
+//   let myStr = name.toString()
+//   console.log(`Hello, ${myStr}`);
+// }
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -59,7 +83,15 @@
 */
 
 //CODE HERE
+// function compareNums(number1, number2){
+//   if (number1 > number2) {
+//   console.log(number1);
+//   } else {
+//     console.log(number2);
+//   }
+// }
 
+const compareNums = (number1, number2) => {if(number1 > number2) {console.log(number1);} else { console.log(number2) }}
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -70,7 +102,16 @@
 */
 
 //CODE HERE
+function add(num1, num2){
+  let newNum1 = parseInt(num1);
+  let newNum2 = parseInt(num2);
+  console.log(num1, newNum1);
+  return newNum1 + newNum2
+}
 
+let sum = add("3", 4);
+
+console.log(sum);
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -161,7 +202,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Using a for loop, iterate over that array and console log each name.
   Call the function, passing in the `namesArr` array (above).
 */
-
+function printAllNames(arrayOfNames) {
+  for (let x = 0; x < namesArr.length(); x++) {
+    console.log(arrayOfNames[x]);
+  }
+}
+printAllNames(namesArr);
 //CODE HERE
 
 
